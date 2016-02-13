@@ -1,0 +1,8 @@
+Extra Libraries:
+
+– Pdf (http://processing.org/reference/libraries/pdf/)
+– controlP5 (http://github.com/sojamo/controlp5)
+– Minim (http://github.com/ddf/Minim)
+– Video (http://processing.org/reference/libraries/video/)
+– Mesh (http://www.leebyron.com/else/mesh/)
+- CMYK (https://github.com/ertdfgcvb/CMYK/)

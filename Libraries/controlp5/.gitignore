@@ -1,0 +1,11 @@
+/bin/
+/distribution/
+/reference/
+/test/
+/src-js/
+.svn/
+/.externalToolBuilders/
+/.settings/
+.buildpath
+.classpath
+.project
