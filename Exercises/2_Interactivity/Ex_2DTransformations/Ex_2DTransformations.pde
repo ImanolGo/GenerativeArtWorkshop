@@ -12,7 +12,7 @@ void draw()
   fill(0, random(20));
   noStroke();
   ellipse(50, 50, 6, 300);
-  rotate(millis()/500.0);
+  rotate(millis()/100.0);
   
 
   

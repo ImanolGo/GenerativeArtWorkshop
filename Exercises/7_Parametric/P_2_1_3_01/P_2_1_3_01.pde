@@ -27,12 +27,15 @@
  * KEYS
  * s                   : save png
  * p                   : save pdf
+ * v                   : save svg
  */
 
+import processing.svg.*;
 import processing.pdf.*;
 import java.util.Calendar;
 
 boolean savePDF = false;
+boolean saveSVG = false;
 
 float tileCountX = 10;
 float tileCountY = 10;
@@ -54,6 +57,7 @@ void setup() {
 
 
 void draw() { 
+  if (saveSVG) beginRecord(SVG, timestamp()+".svg");
   if (savePDF) beginRecord(PDF, timestamp()+".pdf");
 
   noFill();
@@ -93,6 +97,11 @@ void draw() {
     savePDF = false;
     endRecord();
   }
+  
+  if (saveSVG) {
+    saveSVG = false;
+    endRecord();
+  }
 } 
 
 
@@ -104,6 +113,7 @@ void mousePressed() {
 void keyReleased() {
   if (key == 's' || key == 'S') saveFrame(timestamp()+"_##.png");
   if (key == 'p' || key == 'P') savePDF = true;
+  if (key == 'v' || key == 'v') saveSVG = true;
 }
 
 
